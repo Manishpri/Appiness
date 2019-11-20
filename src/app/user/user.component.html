@@ -1,0 +1,17 @@
+<div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>UserName</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let user of users">
+          <td (click)="userrepos(user)" style="cursor: pointer">{{user.login}}</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
